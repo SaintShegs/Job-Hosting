@@ -195,14 +195,17 @@ background-image: url(./images/bg-header-desktop.svg);
 
 
 @media (max-width: 1000px) {
+  .jobs{
+    padding: 30px;
+  }
   .jobs .job .job-item .job-item-image{
     flex: 0 0 20%;
   }
   .jobs .job .job-item .job-item-details{
-    flex: 0 0 60%;
+    flex: 0 0 30%;
   }
   .jobs .job .job-item .job-item-filter{
-  flex: 0 0 100%;
+  flex: 0 0 50%;
   }
   .jobs .job .job-item{
     flex-wrap: wrap;
@@ -210,5 +213,49 @@ background-image: url(./images/bg-header-desktop.svg);
 
   .jobs .job .job-item .job-item-filter{
     justify-content: start;
+  }
+}
+
+@media (max-width: 843px){
+  .jobs{
+    padding: 20px;
+  }
+  .jobs .job .job-item .job-item-image{
+    flex: 0 0 15%;
+  }
+  .jobs .job .job-item .job-item-details{
+    flex: 0 0 35%;
+  }
+  .jobs .job .job-item .job-item-filter{
+  flex: 0 0 50%;
+  }
+  .jobs .job .job-item{
+    flex-wrap: wrap;
+  }
+
+}
+@media (max-width: 700px){
+  .jobs{
+    padding: 10px;
+  }
+  .jobs .job .job-item .job-item-image{
+    flex: 0 0 15%;
+  }
+  .jobs .job .job-item .job-item-details{
+    flex: 0 0 75%;
+  }
+  .jobs .job .job-item .job-item-filter{
+  flex: 0 0 100%;
+  }
+}
+@media (max-width: 480px){
+  .jobs{
+    padding: 5px;
+  }
+  .jobs .job .job-item .job-item-image{
+    flex: 0 0 100%;
+  }
+  .jobs .job .job-item .job-item-details{
+    flex: 0 0 100%;
   }
 }
