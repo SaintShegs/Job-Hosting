@@ -197,15 +197,12 @@ background-image: url(./images/bg-header-desktop.svg);
 @media (max-width: 1000px) {
   .jobs .job .job-item .job-item-image{
     flex: 0 0 20%;
-    border: solid;
   }
   .jobs .job .job-item .job-item-details{
     flex: 0 0 60%;
-    border: solid;
   }
   .jobs .job .job-item .job-item-filter{
   flex: 0 0 100%;
-  border: solid;
   }
   .jobs .job .job-item{
     flex-wrap: wrap;
