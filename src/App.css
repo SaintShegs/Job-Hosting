@@ -1,0 +1,217 @@
+/* .App {
+  text-align: center;
+} */
+
+:root {
+  --bgcolor: hsl(180, 29%, 50%);
+  --lgcyan: hsl(180, 52%, 96%);
+  --lgcyan2: hsl(180, 31%, 95%);
+  --dgcyan: hsl(180, 8%, 52%);
+  --vdgcyan: hsl(180, 14%, 20%);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  
+}
+
+.upperimage{
+height: 9rem;
+background-color: var(--bgcolor);
+background-image: url(./images/bg-header-desktop.svg);
+}
+.filteritems{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  align-items: center;
+  /* position: absolute; */
+  /* width: 80%;
+  left:100px; */
+  height: auto;
+  border-radius: 25px;
+  background-color:var(--lgcyan2);
+  top: 120px;
+}
+.filteritems .clearfilter button{
+  background-color: var(--vdgcyan);
+  border-radius: 25px;
+  color: var(--bgcolor);
+  padding: 5px 10px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+}
+.filteritems .clearfilter button:hover{
+  background-color: var(--bgcolor);
+  color: var(--vdgcyan);
+}
+.filteritems .filter{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.filteritems .filter span{
+  width: auto;
+  padding: 0px 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  color: var(--vdgcyan);
+  background-color: var(--bgcolor);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.jobs{
+  background-color: var(--lgcyan);
+
+  padding: 80px;
+}
+
+.jobs .job{
+  /* border: solid; */
+  width: 100%;
+}
+
+.jobs .job .job-item{
+  width: auto;
+  margin-bottom: 30px;
+  border-left: 10px solid var(--bgcolor);
+  padding: 15px 30px;
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.25);
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+
+}
+
+.jobs .job .job-item .job-item-img img{
+  width: 100%;
+ 
+}
+
+.jobs .job .job-item .job-item-details{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+ 
+}
+.jobs .job .job-item .job-item-details .job-item-details-header{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.jobs .job .job-item .job-item-details .job-item-details-header h4{
+  color: var(--bgcolor);
+}
+.jobs .job .job-item .job-item-details .job-item-details-header span:nth-child(2){
+  font-size: 12px;
+  border-radius: 50px;
+  padding: 2px 5px;
+  background-color: var(--bgcolor);
+  color: white;
+  text-transform: uppercase;
+}
+.jobs .job .job-item .job-item-details .job-item-details-header span:nth-child(3){
+  font-size: 12px;
+  border-radius: 50px;
+  padding: 2px 5px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+}
+
+.jobs .job .job-item .job-item-details .job-item-details-position{
+  font-size: 18px;
+  font-weight: bold;
+}
+.jobs .job .job-item .job-item-details .job-item-details-footer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--dgcyan);
+}
+
+
+.jobs .job .job-item .job-item-filter{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: end;
+  flex-wrap: wrap;
+}
+.jobs .job .job-item .job-item-filter button{
+  padding: 5px 10px;
+  background-color: var(--lgcyan);
+  color: var(--bgcolor);
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.jobs .job .job-item .job-item-filter button:hover{
+  color: var(--lgcyan);
+  background-color: var(--bgcolor);
+}
+
+.container .footer{
+  background-color: var(--bgcolor);
+  color: var(--vdgcyan);
+}
+
+
+
+
+
+
+
+
+
+
+/* .jobs .job .job-item .job-item-image,.job-item-details,.job-item-filter{
+ border: solid;
+} */
+
+.jobs .job .job-item .job-item-image{
+  flex: 0 0 12%;
+}
+ 
+.jobs .job .job-item .job-item-details{
+  flex: 0 0 30%;
+}
+.jobs .job .job-item .job-item-filter{
+  flex: 0 0 60%;
+}
+
+
+@media (max-width: 1000px) {
+  .jobs .job .job-item .job-item-image{
+    flex: 0 0 20%;
+    border: solid;
+  }
+  .jobs .job .job-item .job-item-details{
+    flex: 0 0 60%;
+    border: solid;
+  }
+  .jobs .job .job-item .job-item-filter{
+  flex: 0 0 100%;
+  border: solid;
+  }
+  .jobs .job .job-item{
+    flex-wrap: wrap;
+  }
+
+  .jobs .job .job-item .job-item-filter{
+    justify-content: start;
+  }
+}
