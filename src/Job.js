@@ -151,9 +151,9 @@ const Job = () => {
                                     <div className='job-item-details'>
                                         <div className='job-item-details-header'>
 
-                                        <span><h4>{item.company}</h4></span>
-                                        <span>New!</span>
-                                        <span>Featured</span>
+                                        <span>{item.company}</span>
+                                        {item.new && (<span>New!</span>)}
+                                        {item.featured && (<span>Featured!</span>)}
                                         </div>
                                         
 
@@ -203,7 +203,7 @@ const Job = () => {
 
 
                 <div className="footer">
-                    <marquee behavior=""><h3>Job listing by SaintShegs ©2022</h3> </marquee>
+                    <h3>Job listing by SaintShegs ©2022</h3>
                 </div>
             </div>
     </div>

@@ -112,8 +112,9 @@ background-image: url(./images/bg-header-desktop.svg);
   gap: 10px;
   align-items: center;
 }
-.jobs .job .job-item .job-item-details .job-item-details-header h4{
+.jobs .job .job-item .job-item-details .job-item-details-header span{
   color: var(--bgcolor);
+  font-weight: bold;
 }
 .jobs .job .job-item .job-item-details .job-item-details-header span:nth-child(2){
   font-size: 12px;
@@ -167,6 +168,7 @@ background-image: url(./images/bg-header-desktop.svg);
 .container .footer{
   background-color: var(--bgcolor);
   color: var(--vdgcyan);
+  text-align: center;
 }
 
 
